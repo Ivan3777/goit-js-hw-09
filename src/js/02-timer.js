@@ -44,11 +44,9 @@ function updateInterface(deltaTime) {
   const data = convertMs(deltaTime);
   Object.entries(data).forEach(([key, value]) => {
     refs.interfaceEL[key].textContent = addLeadingZero(value);
-
-    if (key === 'days') {
       return;
     }
-  });
+  );
 }
 
 const options = {
